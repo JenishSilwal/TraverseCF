@@ -1,0 +1,67 @@
+body {
+    background-color: bisque;
+    font-family:'Times New Roman', Times, serif ;
+    margin: 20px;
+    padding: 0;
+}
+h1{
+    color:black;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    color: #580a0a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+label {
+    color: #0e26df;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: right;
+    
+}
+#CP {
+    
+    display: flex;
+    justify-content: center;
+    
+}
+#EN{
+    display: flex;
+    justify-content: center;
+}
+input[type="number"] {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 150px;
+}
+
+#results p {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#angleInputs, #distanceInputs {
+    display: flex;
+   justify-content: center;
+   text-align: center;
+      
+
+}
+button{
+    background-color: rgba(11, 230, 233, 0.168);
+    display: block;
+margin: auto;
+margin-top: 30px ;
+margin-bottom: 50px;
+font-weight: lighter;
+}
+#misclosureResult, #adjustedAnglesResult, #bearingsResult, #coordinatesResult {
+    display: flex;
+    justify-content: center;
+    
+}

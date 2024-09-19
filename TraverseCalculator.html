@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse Computation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Traverse Computation Form</h1>
+
+    <form id="traverseForm">
+        <h3>Input The Total Number of Control Points</h3>
+        <div id="CP">
+        <label for="numPoints"></label>
+        <input type="number" id="numPoints" placeholder=""  min="2" required>
+    </div>
+    
+
+    <h3>Input Coordinates of Two Known Points</h3>
+    <div id="EN">
+
+        
+        <label for="easting1"></label>
+        <input type="number" id="easting1" placeholder="Easting 1" required>
+        <label for="northing1"></label>
+        <input type="number" id="northing1" placeholder="Northing 1"><br>
+
+        <label for="easting2"></label>
+        <input type="number" id="easting2" placeholder="Easting 2" required>
+        <label for="northing2"></label>
+        <input type="number" id="northing2" placeholder="Northing 2">
+    </div>
+
+        <h3>Input Observed Angles (degrees)</h3>
+        <div id="angleInputs"></div>
+
+        <h3>Input Measured Distances (meters)</h3>
+        <div id="distanceInputs">
+        </div>
+
+        <button  type="button" onclick="calculateTraverse()" >COMPUTE</button>
+    
+    </form>
+
+    <h3>Results:</h3>
+    <div id="results">
+        <p id="misclosureResult"></p>
+        <p id="adjustedAnglesResult"></p>
+        <p id="bearingsResult"></p>
+        <p id="coordinatesResult"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
